@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>箱庭 試作版</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+<iframe id="world" title="部屋"></iframe>
+<div id="views" class="ui">
+  <button data-v="box">模型<kbd>1</kbd></button><button data-v="inside">中に入る<kbd>2</kbd></button><button data-v="near">寄り添い<kbd>3</kbd></button>
+</div>
+<div id="hint" class="ui"></div>
+<div id="veil">部屋を用意しています…</div>
+<script src="home-core.js"></script>
+<script>
+const q = new URLSearchParams(location.search);
+const frame = document.getElementById('world');
+const home = HomeCore.createHome({ frame, q });
+const picker = HomeCore.createPicker(home);   // 住む子を選ぶ画面（最初の起動も暮らしの途中も同じ）
+const ui = HomeCore.bindUI(home, { frame, busy: () => picker.isOpen, onPicker: home.EDITION.picker ? () => picker.open() : null });   // サンプル表示（?sample=1）は 👤 を出さない
+home.open().then(info => {
+  ui.hook(); ui.setView('box');
+  document.getElementById('veil').classList.add('gone'); frame.focus(); ui.wake();
+  window.__home = info;
+  if (!home.her() && home.EDITION.picker) picker.open();   // 誰もいない部屋（まだ選んでいない）なら選ぶ画面を出す
+}).catch(e => { document.getElementById('veil').textContent = e.message; });
+</script>
+</body></html>

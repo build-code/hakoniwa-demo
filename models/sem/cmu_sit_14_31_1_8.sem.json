@@ -1,0 +1,99 @@
+{
+ "source": "cmu_sit_14_31_1_8.vrma",
+ "fps": 30,
+ "duration": 3.5,
+ "hipsRest": 0.9954,
+ "canonHips": 0.8827,
+ "skeleton": "own",
+ "feet": {
+  "left": {
+   "point": "sole",
+   "floor": 0.0266,
+   "spans": [
+    [
+     0,
+     3.533,
+     0.001
+    ]
+   ]
+  },
+  "right": {
+   "point": "sole",
+   "floor": 0.0147,
+   "spans": [
+    [
+     0,
+     3.533,
+     0.002
+    ]
+   ]
+  }
+ },
+ "hands": {
+  "left": [],
+  "right": []
+ },
+ "hips": {
+  "mode": "feetDown"
+ },
+ "ground": 0.0147,
+ "below": {
+  "spans": []
+ },
+ "knees": {
+  "left": {
+   "spans": []
+  },
+  "right": {
+   "spans": []
+  }
+ },
+ "torso": {
+  "spans": []
+ },
+ "seat": {
+  "leg": {
+   "thigh": 0.376,
+   "shin": 0.3685
+  },
+  "spans": [
+   {
+    "t0": 0,
+    "t1": 3.533,
+    "kind": "seatFeet",
+    "hipsY": 0.4699,
+    "footY": 0.0075,
+    "footYMin": -0.0005,
+    "footFwd": 0.3122,
+    "kneeAng": 74.8
+   }
+  ]
+ },
+ "arms": {
+  "left": [
+   {
+    "t0": 0.7,
+    "t1": 1.1,
+    "target": "leftUpperLeg",
+    "f": 0.8,
+    "offset": [
+     0.0599,
+     -0.1448,
+     0.0477
+    ]
+   },
+   {
+    "t0": 1.133,
+    "t1": 3.267,
+    "target": "leftUpperLeg",
+    "f": 0.8,
+    "offset": [
+     0.0605,
+     -0.1407,
+     0.052
+    ]
+   }
+  ],
+  "right": []
+ }
+}

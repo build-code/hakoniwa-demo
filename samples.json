@@ -1,0 +1,13 @@
+{
+ "sample": "deltamon",
+ "samples": [
+  {
+   "id": "deltamon",
+   "name": "デルタもん",
+   "kind": "vrm",
+   "url": "models/deltamon.vrm",
+   "birthday": "01-19",
+   "license": "利用条件は要確認（製品に載せる前に一次情報で確かめる）"
+  }
+ ]
+}

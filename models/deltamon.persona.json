@@ -1,0 +1,91 @@
+{
+ "music": "watch",
+ "idle": [
+  "walk",
+  "walk",
+  "walk",
+  "look",
+  "wave",
+  "phone",
+  "mutter",
+  "mutter",
+  "yawn",
+  "lookaround",
+  "think",
+  "texting"
+ ],
+ "walk": "happy",
+ "on": {
+  "chime": "gather",
+  "fireworks": "look",
+  "piano": {
+   "near": "gather",
+   "far": "look"
+  }
+ },
+ "lines": [
+  "やっほー",
+  "ねえねえ",
+  "そうなんだ！",
+  "えへへ"
+ ],
+ "mutter": [
+  "ふんふん♪",
+  "おなかすいたなー",
+  "……",
+  "えーっと",
+  "今日はなにしよっかな",
+  "ねむい…"
+ ],
+ "voice": {
+  "name": "Kyoko",
+  "pitch": 1.5,
+  "rate": 1.1
+ },
+ "sleep": {
+  "at": 23,
+  "until": 6.5
+ },
+ "routine": [
+  {
+   "at": 7,
+   "do": "exercise"
+  },
+  {
+   "at": 7.5,
+   "do": "meal"
+  },
+  {
+   "at": 8.75,
+   "do": "mirror"
+  },
+  {
+   "at": 9,
+   "do": "sweep"
+  },
+  {
+   "at": 13,
+   "do": "window"
+  },
+  {
+   "at": 19,
+   "do": "meal"
+  },
+  {
+   "at": 20,
+   "do": "read"
+  }
+ ],
+ "visits": {
+  "times": 2,
+  "stay": [
+   3,
+   6
+  ]
+ },
+ "farewell": [
+  "ばいばーい",
+  "またねー"
+ ],
+ "tone": "明るくて素直、少し子どもっぽい。短い文で、語尾は「〜だよ」「〜かな」「〜ね」。相手の話に乗っかる"
+}

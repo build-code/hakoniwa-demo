@@ -1,0 +1,66 @@
+{
+ "walk": {
+  "normal": "cmu_142_13_walk.vrma",
+  "happy": "cmu_142_08_walk.vrma"
+ },
+ "sit": {
+  "enter": {
+   "file": "q_Sitting_Enter.vrma",
+   "trim": [
+    0.45,
+    null
+   ]
+  },
+  "idle": [
+   "q_Sitting_Idle_Loop.vrma",
+   "cmu_sit_13_04_4_0.vrma",
+   "cmu_sit_13_05_17_1.vrma",
+   "cmu_sit_13_06_29_2.vrma",
+   "cmu_sit_14_31_1_8.vrma",
+   "cmu_sit_14_32_12_1.vrma"
+  ],
+  "exit": {
+   "file": "q_Sitting_Exit.vrma",
+   "trim": [
+    0,
+    0.72
+   ]
+  },
+  "back": 0.31
+ },
+ "chat": {
+  "call": [],
+  "respond": []
+ },
+ "clip_segments": {
+  "hy_switch_press_chest": {
+   "from": 0.45,
+   "to": 4.95,
+   "fadeOut": 0.7,
+   "stretch": [
+    {
+     "at": [
+      2.05,
+      3.35
+     ],
+     "len": [
+      0.3,
+      0.7
+     ]
+    }
+   ]
+  }
+ },
+ "idle_variants": {
+  "yawn": "cmu_yawn_113_23.vrma",
+  "lookaround": "cmu_look_137_41_4.vrma",
+  "bored": "cmu_bored_139_02.vrma",
+  "texting": [],
+  "relax": [
+   "cmu_relax_137_03_0.vrma",
+   "cmu_relax_137_41_30.vrma"
+  ],
+  "phonecall": []
+ },
+ "exercise": []
+}
